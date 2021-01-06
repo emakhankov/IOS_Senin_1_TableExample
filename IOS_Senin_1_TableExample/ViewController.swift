@@ -23,21 +23,42 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pushAddAction(_ sender: Any) {
-        dataArray.append("NewElemennt");
-        tableView.reloadData();
+      
+      //  dataArray.append("NewElement");
+      //  tableView.reloadData();
+        let alert = UIAlertController(title: "Добавить элемент", message: "", preferredStyle: UIAlertController.Style.alert);
+        
+        alert.addTextField { (UITextField) in
+            UITextField.placeholder = "Новое имя";
+        }
+        
+        let alertAction1 = UIAlertAction(title: "Добавить", style: UIAlertAction.Style.default) { (UIAlertAction) in
+            self.dataArray.append(alert.textFields![0].text!);
+            self.tableView.reloadData();
+        }
+        
+        let alertAction2 = UIAlertAction(title: "Отмена", style: UIAlertAction.Style.cancel, handler: nil);
+    
+        alert.addAction(alertAction1);
+        alert.addAction(alertAction2);
+        
+        present(alert, animated: true, completion: nil);
     }
     
 }
 
  extension ViewController: UITableViewDelegate
  {
+    
+    
+    
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete;
     }
 
  
     func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
-        return "Удалить";
+       return "Удалить";
     }
     
 
