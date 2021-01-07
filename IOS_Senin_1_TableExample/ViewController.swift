@@ -45,6 +45,14 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil);
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "gotoNewViewController" {
+            let selectedCellIndexRow = tableView.indexPathForSelectedRow!.row;
+            (segue.destination as! NewViewController).strData = dataArray[selectedCellIndexRow];
+        }
+    }
+    
 }
 
  extension ViewController: UITableViewDelegate
@@ -61,6 +69,9 @@ class ViewController: UIViewController {
        return "Удалить";
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "gotoNewViewController", sender: self)
+    }
 
  }
 

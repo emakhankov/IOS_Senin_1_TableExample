@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B18F2DCC25A76FA200D3F7B4 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18F2DCB25A76FA200D3F7B4 /* NewViewController.swift */; };
 		B1FD653625A4F24300878D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD653525A4F24300878D7B /* AppDelegate.swift */; };
 		B1FD653825A4F24300878D7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD653725A4F24300878D7B /* SceneDelegate.swift */; };
 		B1FD653A25A4F24300878D7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD653925A4F24300878D7B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B18F2DCB25A76FA200D3F7B4 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		B1FD653225A4F24300878D7B /* IOS_Senin_1_TableExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Senin_1_TableExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FD653525A4F24300878D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1FD653725A4F24300878D7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				B1FD653E25A4F24400878D7B /* Assets.xcassets */,
 				B1FD654025A4F24400878D7B /* LaunchScreen.storyboard */,
 				B1FD654325A4F24400878D7B /* Info.plist */,
+				B18F2DCB25A76FA200D3F7B4 /* NewViewController.swift */,
 			);
 			path = IOS_Senin_1_TableExample;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				B1FD653A25A4F24300878D7B /* ViewController.swift in Sources */,
 				B1FD653625A4F24300878D7B /* AppDelegate.swift in Sources */,
 				B1FD653825A4F24300878D7B /* SceneDelegate.swift in Sources */,
+				B18F2DCC25A76FA200D3F7B4 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
